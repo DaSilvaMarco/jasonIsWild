@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %} {% block title %}Editer un Argonaute{% endblock%}
+{% block body %}
+<div class="argonaut-div">
+  <div class="argonaut-card">
+    <h2>{{ argonaut.name }}</h2>
+    <div class="argonaut-picture">
+      <img class="img-resp"src={{ asset('pictures/'~argonaut.picture) }}
+      alt="photo d'argonaute" />
+    </div>
+    <p>{{ argonaut.commentary }}</p>
+  </div>
+</div>
+
+<div class="form-control">
+  <div class="form-width form-image"></div>
+  <div class="form-width form-inputs">
+    {{ include("argonauts/_form.html.twig") }}
+  </div>
+</div>
+<a href="{{ path('app_argonauts_index') }}">Retour à la page d'accueil</a>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %} {% block title %}Argonauts{% endblock %} {% block
+body %}
+
+<div class="form-control">
+  <div class="form-width form-image"></div>
+  <div class="form-width form-inputs">
+    {{ include("argonauts/_form.html.twig") }}
+  </div>
+</div>
+
+<div class="argonaut-div">
+    {% for argonaut in argonauts %}
+        <div class="argonaut-card">
+            <h2>{{ argonaut.name }}</h2>
+            <div class="argonaut-picture">
+                <img class="img-resp"src={{ asset('pictures/'~argonaut.picture) }} alt="photo d'argonaute" />
+            </div>
+            <p>{{ argonaut.commentary }}</p>
+            <div class="argonaut-actions">
+                <a href="{{ path('app_argonauts_edit', { id: argonaut.id }) }}">Editer</a>
+                <a href="{{ path('app_argonauts_delete', { id: argonaut.id }) }}">Supprimer</a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

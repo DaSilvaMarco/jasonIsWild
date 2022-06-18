@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 1em;
+}
+
+header img {
+  max-width: 96px;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+footer {
+  background: red;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.new-member-form {
+  margin: 2em 0 4em 0;
+  text-align: center;
+}
+
+.member-item {
+  padding: 0.25em 0;
+}
+
+footer {
+  margin-top: 2em;
+  text-align: center;
+  color: #fff;
+  background: #f76c6c;
+  padding: 0.25em 0;
+}
+
+.form-control {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #fff0f1;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.img-resp {
+  width: 100%;
+  height: auto;
+}
+
+.form-width {
+  width: 50%;
+}
+
+.transparent {
+  color: transparent;
+}
+
+.form-image {
+  background-image: url("../pictures/argonauts.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.form-inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.argonaut-card {
+  width: 20%;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  flex-basis: 25%;
+  margin: 1rem 0;
+}
+
+.argonaut-picture {
+  width: 70%;
+  margin: auto;
+}
+
+.argonaut-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.argonaut-div {
+  width: 90%;
+  margin: auto;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
